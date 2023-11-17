@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Themed Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+  
+</head>
+
+<body>
+    <div class="login-header">
+        <h1>DigiBallot: Blockchain-Powered Elections for All</h1>
+    </div-class>
+
+
+    <div class="login-container">
+        <h2>Vote Today!</h2>
+        <form id="login-form" onsubmit="validateEntry(event)">
+            <label for="private-key">Private Key ID:</label>
+            <input type="text" id="private-key" name="public-key">
+            <br>
+            <input type="submit" value="Submit">
+           
+        </form>
+    </div>
+
+    <!--Validates if field has been left blank-->
+    <script>
+        function validateEntry(event) {
+            var userIdInput = document.getElementById("private-key").value;
+            if (userIdInput.trim() === "") {
+                alert("An Id is required in order to proceed");
+                event.preventDefault(); // Prevent form submission
+            } 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7f63b9; 
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #6339ac; 
+    border: 1px solid #5f449d; 
+    border-radius: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: 290px;
+}
+
+.login-container h2 {
+    color: #fff;
+}
+
+.login-header h1 {
+    color: #fff;
+    font-size: 50px; 
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label, .login-container input {
+    margin-bottom: 10px;
+}
+
+.login-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #7960b4; /* Purple border */
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+}
+
+.login-container button {
+    background-color: #7e57c2; /* Deep Purple button background */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.login-container button:hover {
+    background-color: #673ab7; /* Purple on hover */
+}
+
+input[type="submit"] {
+    background-color: #7e57c2; /* Deep Purple button background */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
